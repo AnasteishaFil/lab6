@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+	<title>Hawaii</title>
+</head>
+<body>
+	<section>
+		<div class="section">
+		<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+		width="500px" height="160px" xml:space="preserve">
+		<defs>
+		<pattern id="water" width=".25" height="1.1" patternContentUnits="objectBoundingBox">
+		<path fill="#20558a" d="M0.25,1H0c0,0,0-0.659,0-0.916c0.083-0.303,0.158,0.334,0.25,0C0.25,0.327,0.25,1,0.25,1z"/>
+		</pattern>
+		<text id="text" transform="translate(2,116)" font-family="'Cabin Condensed'" font-size="21vh" font-weight="550">Hawaii</text>
+		<mask id="text-mask">
+		<use x="0" y="0" xlink:href="#text" opacity="1" fill="#ffffff"/>
+		</mask>
+		<g id="eff">
+		<use x="0" y="0" xlink:href="#text" fill="#97d0f7"/>
+	   <rect class="water-fill" mask="url(#text-mask)" fill="url(#water)" x="-300" y="65" width="1200" height="120" opacity="0.3">
+		<animate attributeType="xml" attributeName="x" from="-300" to="0" repeatCount="indefinite" dur="2.5s"/>
+	   </rect>
+		<rect class="water-fill" mask="url(#text-mask)" fill="url(#water)" y="60" width="1600" height="120" opacity="0.3">
+		 <animate attributeType="xml" attributeName="x" from="-400" to="0" repeatCount="indefinite" dur="3.5s"/>
+	  	</rect>
+	  	<rect class="water-fill" mask="url(#text-mask)" fill="url(#water)" y="70" width="800" height="120" opacity="0.3">
+		<animate attributeType="xml" attributeName="x" from="-200" to="0" repeatCount="indefinite" dur="1.4s"/>
+	  	</rect>
+		<rect class="water-fill" mask="url(#text-mask)" fill="url(#water)" y="70" width="2000" height="120" opacity="0.3">
+		<animate attributeType="xml" attributeName="x" from="-500" to="0" repeatCount="indefinite" dur="3.3s"/>
+	  	</rect>
+		</g>
+	  	</defs>
+		 <use xlink:href="#eff" opacity="0.9"/>
+	</svg>
+	</div>
+	</section>
+	<div class="infa">
+		<div class="osnova">
+			Почти все люди между горами и океаном предпочитают что-то одно. А я люблю и то, и то. Именно поэтому Гавайи отличный вариант для отдыха моей мечты. Здесь есть всё для идеального отдыха:
+			<div class="znaki">
+				<div class="mountain">
+					<img class="icon" src="images/mountain.png" alt=""><h3>Горы</h3>
+				</div>
+				<div class="beach">
+					<img class="icon" src="images/parasol.png" alt=""><h3>Пляжи</h3>
+				</div>
+				<div class="ocean">
+					<img class="icon" src="images/wave.png" alt=""><h3>Океан</h3>
+				</div>
+				<div class="palm">
+					<img class="icon" src="images/palm-tree.png" alt=""><h3>Пальмы</h3>
+				</div>
+			</div>
+		</div>
+		<div class="kartinki">
+			<div class="hawaii">
+				<img class="hawaiii" src="images/ha1.jpg" alt="">
+				<img class="hawaiii" src="images/1200px-Hawai'i.jpg" alt="">
+				<img class="hawaiii" src="images/gavayi_1.jpg" alt="">
+			</div>
+			<div class="img_mountain">
+				<img class="img_mountainn" src="images/горы.jpeg" alt="">
+				<img class="img_mountainn" src="images/горы1.jpg" alt="">
+				<img class="img_mountainn" src="images/горы2.jpg" alt="">
+			</div>
+			<div class="img_beach">
+				<img class="img_beachh" src="images/пляж.jpg" alt="">
+				<img class="img_beachh" src="images/пляж2.jpg" alt="">
+				<img class="img_beachh" src="images/пляж1.jpg" alt="">
+			</div>
+			<div class="img_ocean">
+				<img class="img_oceann" src="images/океан1.jpg" alt="">
+				<img class="img_oceann" src="images/океан2.jpg" alt="">
+				<img class="img_oceann" src="images/океан.jpg" alt="">
+			</div>
+			<div class="img_palm">
+				<img class="img_palmm" src="images/пальмы.jpg" alt="">
+				<img class="img_palmm" src="images/пальмы2.jpg" alt="">
+				<img class="img_palmm" src="images/пальмы1.jpg" alt="">
+			</div>
+		</div>
+	</div>
+	<div class="section2">
+		<div class="vopros">Вы ведь уже захотели на Гавайи? Тогда скорее заполняйте форму!</div>
+		<div class="fon">
+			<div class="form">
+			Имя <input type="text"><br>
+			Фамилия <input type="text"><br>
+			Эл.почта <input type="email"><br>
+			Телефон <input type="tel"><br>
+			Дата вылета <input type="date"><br>
+			Количество человек <input type="number"><br>
+			<input class="otpravit" type="submit">
+			</div>
+		</div>
+	</div>
+<script>
+	$('.img_mountainn').fadeOut();
+	$('.img_beachh').fadeOut();
+	$('.img_oceann').fadeOut();
+	$('.img_palmm').fadeOut();
+	$('.mountain').hover(function(){
+		$('.hawaiii').fadeOut();
+		$('.img_mountainn').fadeIn();
+	}, function(){
+		$('.hawaiii').fadeIn();
+		$('.img_mountainn').fadeOut();
+	});
+	$('.beach').hover(function(){
+		$('.hawaiii').fadeOut();
+		$('.img_beachh').fadeIn();
+	}, function(){
+		$('.hawaiii').fadeIn();
+		$('.img_beachh').fadeOut();
+	});
+	$('.ocean').hover(function(){
+		$('.hawaiii').fadeOut();
+		$('.img_oceann').fadeIn();
+	}, function(){
+		$('.hawaiii').fadeIn();
+		$('.img_oceann').fadeOut();
+	});
+	$('.palm').hover(function(){
+		$('.hawaiii').fadeOut();
+		$('.img_palmm').fadeIn();
+	}, function(){
+		$('.hawaiii').fadeIn();
+		$('.img_palmm').fadeOut();
+	});
+</script>
+</body>
+</html>

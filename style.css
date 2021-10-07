@@ -1,0 +1,128 @@
+body {
+	margin: 0;
+	line-height: 1.6;
+}
+h1, h2, h3, h4, h5, h6 {margin: 0}
+
+section{
+	width: 100%;
+	height: 27vh;
+	background: url("images/hawaii-1.jpg") no-repeat;
+	background-size: 100% auto;
+}
+.section{
+	width: 100%;
+	height: 27vh;
+	background: rgba(0, 0, 0, 0.6);
+}
+
+svg{
+  position: absolute;
+  top: 3vh;
+  left: 50%;
+  margin-left: -225px;
+}
+.infa{
+	width: 100%;
+	height: 73vh;
+	background: linear-gradient(to bottom, white 1%, #97d0f7);
+}
+.osnova{
+	width: 80%;
+	margin: 2vh auto;
+	text-align: center;
+	color: #20558a;
+	font-family: Comfortaa;
+	font-size: 30px;
+}
+.znaki{
+	width: 70%;
+	height: 10vh;
+	margin: 2vh auto;
+	display: flex;
+	justify-content: space-between;
+	color: #20558a;
+	font-family: Comfortaa;
+}
+.icon{
+	width: 10vh;
+	height: 10vh;
+}
+h3{
+	font-size: 25px;
+	line-height: 11vh;
+	margin: 0 1vw;
+}
+.mountain, .beach, .ocean, .palm{
+	width: 15%;
+	display: flex;
+	justify-content: space-between;
+}
+.kartinki{
+	width: 80%;
+	margin: 2vh auto;
+}
+.hawaii{
+	width: 80%;
+	display: flex;
+	justify-content: space-between;
+	position: absolute;
+	z-index: 10;
+}
+.img_mountain, .img_beach, .img_ocean, .img_palm{
+	width: 80%;
+	display: flex;
+	justify-content: space-between;
+	position: absolute;
+	z-index: 1;
+}
+.hawaii img, .img_mountain img, .img_beach img, .img_ocean img, .img_palm img{
+	height: 37vh;
+}
+
+.section2{
+	width: 100%;
+	background: linear-gradient(to top, white , #97d0f7 95%);
+}
+.vopros{
+	width: 80%;
+	margin: 0 auto;
+	text-align: center;
+	color: #20558a;
+	font-family: Comfortaa;
+	font-size: 30px;
+}
+.fon{
+	width: 85vh;
+	margin: 2vh auto 0 auto;
+	padding: 5vh 0;
+	background: url('images/6000.png') no-repeat;
+	background-size: 100% auto;
+	background-blend-mode: lighten;
+}
+.form{
+	width: 90%;
+	margin: 0 auto 5vh auto;
+	display: block;
+	color: aliceblue;
+	font-family: Comfortaa;
+	font-size: 24px;
+}
+input{
+	border: #004182 solid 2px;
+	border-radius: 5px;
+	background: aliceblue;
+	font-family: Comfortaa;
+	font-size: 24px;
+	color: #20558a;
+	cursor: pointer;
+}
+.otpravit{
+	background-color: #97d0f7;
+	box-shadow: #97d0f7 0 0 5px 5px;
+	border: none;
+	color: white;
+	padding: 1vh;
+	display: block;
+	margin: 2vh auto;
+}
